@@ -17,7 +17,7 @@ namespace QuickScript
 
         public override string ToString()
         {
-            return Filename;
+            return Filename != null ? Path.GetFileNameWithoutExtension(Filename) : string.Empty;
         }
 
         private string _filename;
